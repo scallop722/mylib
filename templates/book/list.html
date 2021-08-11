@@ -1,15 +1,29 @@
 {% extends "layout.html" %}
 {% block content %}
-<div class="container">
+<div class="container mt-3">
   <div class="card">
-    <div class="row">
-      <div class="col">
-        <ul>
-          {% for book in books %}
-          <li>{{ book.title }}</li>
-          {% endfor %}
-        </ul>
-      </div>
+    <div class="card-header">
+      <h4 class="mb-0">
+        図書一覧
+      </h4>
+    </div>
+    <div class="card-body">
+      <table class="table">
+        <tr>
+          <th>タイトル</th>
+          <th>著者</th>
+          <th>貸し出しステータス</th>
+          <th>返却予定日時</th>
+        </tr>
+        {% for book in books %}
+        <tr>
+          <td>{{book.title}}</td>
+          <td>{{book.author}}</td>
+          <td>{{book.get_planed_return_date()}}</td>
+          <td>2021/09/01 12:00</td>
+        </tr>
+        {% endfor %}
+      </table>
     </div>
   </div>
 </div>

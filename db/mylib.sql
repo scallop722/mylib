@@ -25,7 +25,7 @@ CREATE TABLE lending_history
 	id bigserial NOT NULL,
 	book_id bigint NOT NULL,
 	member_id bigint NOT NULL,
-	lenging_date date NOT NULL,
+	lending_date date NOT NULL,
 	returned boolean DEFAULT 'false' NOT NULL,
 	PRIMARY KEY (id)
 ) WITHOUT OIDS;

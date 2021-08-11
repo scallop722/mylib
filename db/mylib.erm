@@ -138,7 +138,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2021-08-09 16:27:15</creation_date>
-			<updated_date>2021-08-09 16:42:53</updated_date>
+			<updated_date>2021-08-11 15:25:12</updated_date>
 			<model_property>
 				<name>プロジェクト名</name>
 				<value></value>
@@ -233,7 +233,7 @@
 			<char_semantics>false</char_semantics>
 			<description></description>
 			<logical_name>貸出日</logical_name>
-			<physical_name>lenging_date</physical_name>
+			<physical_name>lending_date</physical_name>
 			<type>date</type>
 		</word>
 		<word>

@@ -1,10 +1,9 @@
 from entity.Book import Book
+from entity.LendingHistory import LendingHistory
 from flask import Flask, render_template, redirect
 from flask.helpers import url_for
-from jinja2 import Environment
 from setting import session
 
-env = Environment(variable_start_string="${", variable_end_string="}")
 app = Flask(__name__)
 
 @app.route("/book/list", methods=["GET"])
